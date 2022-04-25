@@ -80,7 +80,7 @@ router.get(
 		request(req, res, next, {
 			authentication: false,
 		}),
-	async (req, res) => {
+	async (req, res) => { /* lgtm [js/missing-rate-limiting] */
 		handleLogin(req, res);
 	},
 );
